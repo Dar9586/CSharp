@@ -32,19 +32,6 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Base.cs" />
-    <Compile Include="Generatore.cs">
-      <DependentUpon>Admin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Creator.cs">
-      <DependentUpon>Admin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Delet.cs">
-      <DependentUpon>Admin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Admin.cs" />
-    <Compile Include="Creator2.cs">
-      <DependentUpon>Admin.cs</DependentUpon>
-    </Compile>
     <Compile Include="Test.cs" />
     <Compile Include="New\New Password.cs">
       <DependentUpon>New Altro.cs</DependentUpon>
@@ -140,6 +127,19 @@
     <Compile Include="New\Simon.cs">
       <DependentUpon>New Giochi.cs</DependentUpon>
     </Compile>
+    <Compile Include="New\Admin.cs" />
+    <Compile Include="New\Generatore.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New\Creator.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New\Delet.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New\Creator2.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -159,5 +159,6 @@
   <ItemGroup>
     <Folder Include="New\" />
     <Folder Include="Program\" />
+    <Folder Include="Admin\" />
   </ItemGroup>
 </Project>
