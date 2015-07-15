@@ -127,32 +127,21 @@
     <Compile Include="New\Simon.cs">
       <DependentUpon>New Giochi.cs</DependentUpon>
     </Compile>
-    <Compile Include="New\Admin.cs" />
-    <Compile Include="New\Generatore.cs">
+    <Compile Include="Admin\Admin.cs" />
+    <Compile Include="Admin\Generatore.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="New\Creator.cs">
+    <Compile Include="Admin\Creator.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="New\Delet.cs">
+    <Compile Include="Admin\Delet.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="New\Creator2.cs">
+    <Compile Include="Admin\Creator2.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <Reference Include="NCalc">
-      <HintPath>NCalc.dll</HintPath>
-    </Reference>
-    <Reference Include="PInvokeLib">
-      <HintPath>..\..\PInvokeAddin_Bin\PInvokeLib.dll</HintPath>
-    </Reference>
-    <Reference Include="SpecImporter">
-      <HintPath>..\..\PInvokeAddin_Bin\SpecImporter.dll</HintPath>
-    </Reference>
-  </ItemGroup>
   <ItemGroup>
     <None Include="Properties\Cronologia.txt" />
   </ItemGroup>
@@ -160,5 +149,16 @@
     <Folder Include="New\" />
     <Folder Include="Program\" />
     <Folder Include="Admin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="NCalc">
+      <HintPath>DLL\NCalc.dll</HintPath>
+    </Reference>
+    <Reference Include="PInvokeLib">
+      <HintPath>DLL\PInvokeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="SpecImporter">
+      <HintPath>DLL\SpecImporter.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>
