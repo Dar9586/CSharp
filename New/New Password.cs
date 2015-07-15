@@ -9,51 +9,7 @@ namespace ita
 {
 	public static class New_Password
 	{
-		private static string createPath(){
-			
-			string path=@"C:\";
-			bool end=false;
-			string[] st=new string[999];
-				while(true){
-				Console.Clear();
-				while(true){
-
-					st=Directory.GetDirectories(path);
-					for(int a=0;a<st.Length;a++){
-						string s="";
-						s=(a+1).ToString();
-							Console.WriteLine("{0}. {1}",s,st[a]);
-						}
-					Console.WriteLine("\nInserisci cartella dove andare \nInserire // per andare alla cartella dove si trova questo file\nInserire .. per tornare indietro di una cartella\noppure Inserisci il nome del file [Deve finire con .txt]:");
-					string l=Console.ReadLine();
-					Console.Clear();
-					try{
-						if(l.Substring(l.Length-4,4)==".txt"&&path!=@"C:\"){path=Path.Combine(path,l);end=true;break;}}catch(ArgumentOutOfRangeException){}catch(NullReferenceException){}
-					try{
-						if(l=="//"){path=Directory.GetCurrentDirectory();break;}}catch(ArgumentOutOfRangeException){}catch(NullReferenceException){}
-					try{
-						if(l==".."&&path!=@"C:"){
-							int o=0;
-							for(int a=path.Length-1;a>=0;a--){if(path.ToCharArray()[a].ToString()==@"\"){o=a;break;}}
-							path=path.Substring(0,o);
-							if(path=="C:"){path="C:\\";}
-							break;}}catch(ArgumentOutOfRangeException){}catch(NullReferenceException){}
-					try{
-						int k=int.Parse(l);
-						if(k>0&&k<st.Length){string[] st1=Directory.GetDirectories(st[k-1]);
-							path=st[k-1];
-							break;}
-					}catch(UnauthorizedAccessException){Console.WriteLine("Impossibile Accedere alla cartella.");Console.ReadLine();break;}
-					catch(FormatException){Console.WriteLine("Numero ,percorso o nome file non valido.");Console.ReadLine();break;}
-					
-
-				}
-				if(end){break;}
-			}
-
-
-			return path;
-		}
+		
 
 
 		private static void prin2(bool x,bool change,string s){
@@ -210,7 +166,7 @@ namespace ita
 					}
 					if(what==7){if(save){save=false;}else{save=true;}}
 					if(what==8){
-						path=createPath();
+						path=Utility.createPath(".txt");
 
 					}
 					if(what==9){break;}
@@ -501,7 +457,7 @@ namespace ita
 					else if(what1==3){what1=4;}
 					}
 					else if(cki.Key==ConsoleKey.Enter){
-					if(what1==0){path=createPath();}
+					if(what1==0){path=Utility.createPath(".txt");}
 					else if(what1==1){ConsoleKeyInfo cki2 = new ConsoleKeyInfo();
 						string st="";
 						while(true){

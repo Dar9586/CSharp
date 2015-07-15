@@ -7,14 +7,7 @@ namespace ita
 {
 	public static class New_Switch
 	{
-		private static StringBuilder rev(StringBuilder str)
-		{
-			char[] array = str.ToString().ToCharArray();
-			Array.Reverse(array);
-			str.Remove(0, str.Length);
-			str.Append(array);
-			return str;
-		}
+		
 
 		private static void prinscheme(int b, int h, List<string> user,int where)
 		{
