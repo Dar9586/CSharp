@@ -6,14 +6,7 @@ namespace ita
 {
     public static class Switch
     {
-        private static StringBuilder rev(StringBuilder str)
-        {
-            char[] array = str.ToString().ToCharArray();
-            Array.Reverse(array);
-            str.Remove(0, str.Length);
-            str.Append(array);
-            return str;
-        }
+        
 
         private static void prinscheme(int b, int h, List<string> user)
         {
@@ -29,18 +22,18 @@ namespace ita
                 {
                     if (a + 1 < 10)
                     {
-                        st1.Append(rev(rev(st).Append("00")));
+						st1.Append(Utility.rev(Utility.rev(st).Append("00")));
                     }
                     else if (a + 1 < 100)
                     {
-                        st1.Append(rev(rev(st).Append("0")));
+						st1.Append(Utility.rev(Utility.rev(st).Append("0")));
                     }
                 }
                 else if (sum > 9)
                 {
                     if (a + 1 < 10)
                     {
-                        st1.Append(rev(rev(st).Append("0")));
+						st1.Append(Utility.rev(Utility.rev(st).Append("0")));
                     }
                 }
                 second.Add(st.ToString());

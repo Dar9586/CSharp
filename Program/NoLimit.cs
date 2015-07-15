@@ -6,14 +6,7 @@ namespace ita
 {
 	public static class NoLimit
 	{
-		private static StringBuilder rev (StringBuilder str)
-		{
-			char[] array = str.ToString ().ToCharArray ();
-			Array.Reverse (array);
-			str.Remove (0, str.Length);
-			str.Append (array);
-			return str;
-		}
+		
 		private static void divi (long num1, long num2)
 		{
 			int num;
@@ -48,12 +41,12 @@ namespace ita
 			if (nu1.Length < nu2.Length) {
 				int k = nu2.Length - nu1.Length;
 				for (int a = 0; a < k; a++) {
-					nu1 = rev (rev (nu1).Append ("0"));
+					nu1 = Utility.rev (Utility.rev (nu1).Append ("0"));
 				}
 			} else {
 				int k = nu1.Length - nu2.Length;
 				for (int a = 0; a < k; a++) {
-					nu2 = rev (rev (nu2).Append ("0"));
+					nu2 = Utility.rev (Utility.rev (nu2).Append ("0"));
 				}
 			}
 			string st1 = nu1.ToString ();
@@ -72,10 +65,10 @@ namespace ita
 				} else {
 					repo = false;
 				}
-				final = rev (rev (final).Append (cache.ToString ()));
+				final = Utility.rev (Utility.rev (final).Append (cache.ToString ()));
 			}
 			if (repo) {
-				final = rev (rev (final).Append ("1"));
+				final = Utility.rev (Utility.rev (final).Append ("1"));
 			}
 			if (pri) {
 				Console.WriteLine ("{0} + {1} = {2}", num1, num2, final);

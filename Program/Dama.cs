@@ -136,14 +136,7 @@ namespace ita
             }
         }
 
-        private static StringBuilder rev(StringBuilder str)
-        {
-            char[] array = str.ToString().ToCharArray();
-            Array.Reverse(array);
-            str.Remove(0, str.Length);
-            str.Append(array);
-            return str;
-        }
+        
 
         private static void prin(List<string> list, int num, int can, List<int> usab)
         {
