@@ -56,12 +56,6 @@
       <DependentUpon>Altro.cs</DependentUpon>
     </Compile>
     <Compile Include="Program\Giochi.cs" />
-    <Compile Include="Program\TrisPc.cs">
-      <DependentUpon>Giochi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program\TrisPl.cs">
-      <DependentUpon>Giochi.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program\Switch.cs">
       <DependentUpon>Giochi.cs</DependentUpon>
     </Compile>
@@ -141,6 +135,10 @@
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
     <Compile Include="Utility.cs" />
+    <Compile Include="Program\Tris.cs">
+      <DependentUpon>Giochi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New Tris.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

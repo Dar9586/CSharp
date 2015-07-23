@@ -29,3 +29,5 @@
 29 = New 2048
 30 = New Memory
 31 = New Switch
+32 = Snake
+33 = New Tris

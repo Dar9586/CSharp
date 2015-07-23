@@ -8,16 +8,26 @@ namespace ita
 		{
 
 
-			Console.WriteLine("1 = Password");
+			#region Select
+			Console.WriteLine ("1 = Password");
 
-			Console.WriteLine();
-			Console.Write("Scegli: ");
+			Console.WriteLine ();
+			Console.Write ("Scegli: ");
+			#endregion
 
 			string h = Console.ReadLine();
-			if (h == "1") { New_Password.pass(); }
-			else if (h == "0") { New.menu(); }
-			else if (h == "99") { Admin.menu(); }
-			else { Console.Write("Programma non trovato."); Console.ReadLine(); }
+			#region Menu
+			if (h == "1") {
+				New_Password.pass ();
+			} else if (h == "0") {
+				New.menu ();
+			} else if (h == "99") {
+				Admin.menu ();
+			} else {
+				Console.Write ("Programma non trovato.");
+				Console.ReadLine ();
+			}
+			#endregion
 }
 
 		public static void menu1()
