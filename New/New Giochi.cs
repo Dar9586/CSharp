@@ -18,6 +18,7 @@ namespace ita
 			Console.WriteLine ("5 = Snake");
 			Console.WriteLine ("6 = Simon");
 			Console.WriteLine ("7 = Tris");
+			Console.WriteLine ("8 = 49 Tiles");
 			Console.WriteLine ();
 			Console.Write ("Scegli: ");
 			#endregion
@@ -38,7 +39,10 @@ namespace ita
 				Simon.simo ();
 			} else if (h == "7") {
 				New_Tris.tris ();
-			} else if (h == "99") {
+			}else if (h == "8") {
+				New_Tiles.tile();
+			}
+			else if (h == "99") {
 				Admin.menu ();
 			} else if (h == "0") {
 				New.menu ();
