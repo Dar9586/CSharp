@@ -31,3 +31,4 @@
 31 = New Switch
 32 = Snake
 33 = New Tris
+34 = New Tiles
