@@ -9,8 +9,10 @@ namespace ita
 	{
 		public static void test1()
 		{
-			Console.CursorSize=100;
-			Console.Write("00 per tornare al menù o INVIO per continuare: ");
+            Console.SetWindowSize(50,40);
+            Console.SetBufferSize(50,40);
+			Console.BackgroundColor=ConsoleColor.White;Console.Clear();
+			Letter.clearZone(2,2,38,38,ConsoleColor.Black);
 			string b = Console.ReadLine();
 			if (b == "00") { Program.Main(); }
 		}

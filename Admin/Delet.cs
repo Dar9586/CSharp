@@ -76,7 +76,7 @@ namespace ita
 				}
 			}
 			string name = "";
-			string pa=@"C:\Users\Antonio\Desktop\tes";
+			string pa=@"C:\Users\TOPPI\AppData\Roaming\.minecraft\Visual Basic";
 			if (save == 1)
 			{
 				while (name.Length == 0 && !File.Exists(name))

@@ -1,0 +1,14 @@
+﻿<Properties StartupItem="ita.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Admin\Creator3.cs">
+    <Files>
+      <File FileName="Admin\Admin.cs" Line="23" Column="19" />
+      <File FileName="Admin\Creator3.cs" Line="4" Column="1" />
+      <File FileName="Admin\Creator2.cs" Line="35" Column="51" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

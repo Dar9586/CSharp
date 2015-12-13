@@ -242,6 +242,7 @@ namespace ita
             List<string> list = new List<string>();
             for (int a = 0; a < 32; a++)
             {
+				
                 if (a < 12) { list.Add("O "); }
                 else if (a < 20) { list.Add("  "); }
                 else { list.Add("X "); }
@@ -375,7 +376,7 @@ namespace ita
                     prin(list, num, 3, usable);
 
                     Console.Write("Scegli dove andare:");
-                    num1 = int.Parse(Console.ReadLine());
+					try{num1 = int.Parse(Console.ReadLine());}catch(Exception){num1=0;}
                     num1--;
                     if (usable.Contains(num1)) { break; }
                 }

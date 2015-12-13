@@ -30,10 +30,6 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Letter.cs" />
-    <Compile Include="New\Galattron.cs">
-      <DependentUpon>New Giochi.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Base.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -148,9 +144,6 @@
     <Compile Include="Admin\Creator2.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Creator3.cs">
-      <DependentUpon>Admin.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program\Tris.cs">
       <DependentUpon>Giochi.cs</DependentUpon>
     </Compile>
@@ -164,11 +157,9 @@
     <Compile Include="New\New Dama.cs">
       <DependentUpon>New Giochi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program\Anagram.cs">
-      <DependentUpon>Altro.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program\Forza4.cs">
-      <DependentUpon>Giochi.cs</DependentUpon>
+    <Compile Include="Anagram.cs" />
+    <Compile Include="Admin\Creator3.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
